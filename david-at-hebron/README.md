@@ -11,7 +11,7 @@ This is an interactive **Voronoi treemap** of the contingents each tribe sent to
 - **Icons** are each tribe's traditional symbol (Genesis 49, Deuteronomy 33), drawn in a lighter or darker shade of the cell colour.
 - **Hover** over a cell to see its count and any notes on how it was worked out.
 
-Download [`david_at_hebron.html`](david_at_hebron.html) and open it in a browser to see the interactive version.
+**[Open the interactive chart](https://elikplim25.github.io/Bible-Data-Stories/david-at-hebron/david_at_hebron.html)**. You can also download [`david_at_hebron.html`](david_at_hebron.html) and open it in a browser.
 
 ## The data
 
