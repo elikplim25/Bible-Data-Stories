@@ -1,8 +1,8 @@
-# Dave in the Cave: David's army at Hebron
+# David at Hebron: All Israel came to make David king
 
 **340,824 men from all the tribes of Israel came to David to make him king (1 Chronicles 12:23-37).**
 
-![David's army at Hebron](dave_in_the_cave.png)
+![David's army at Hebron](david_at_hebron.png)
 
 This is an interactive **Voronoi treemap** of the contingents each tribe sent to David at Hebron:
 
@@ -11,7 +11,7 @@ This is an interactive **Voronoi treemap** of the contingents each tribe sent to
 - **Icons** are each tribe's traditional symbol (Genesis 49, Deuteronomy 33), drawn in a lighter or darker shade of the cell colour.
 - **Hover** over a cell to see its count and any notes on how it was worked out.
 
-Download [`dave_in_the_cave.html`](dave_in_the_cave.html) and open it in a browser to see the interactive version.
+Download [`david_at_hebron.html`](david_at_hebron.html) and open it in a browser to see the interactive version.
 
 ## The data
 
@@ -43,12 +43,12 @@ Download [`dave_in_the_cave.html`](dave_in_the_cave.html) and open it in a brows
 
 | File | What it is |
 |---|---|
-| `dave_in_the_cave.R` | Script that builds the chart |
-| `dave_in_the_cave_data.csv` | Tidy table of tribe, men, verse and notes (the table above) |
-| `Dave in the Cave.xlsx` | Working spreadsheet: tribal symbols, their biblical sources and the raw counts from 1 Chr 12 |
+| `david_at_hebron.R` | Script that builds the chart |
+| `david_at_hebron_data.csv` | Tidy table of tribe, men, verse and notes (the table above) |
+| `David at Hebron.xlsx` | Working spreadsheet: tribal symbols, their biblical sources and the raw counts from 1 Chr 12 |
 | `tribe_icons.csv` | Icon outlines as polygon coordinates (`tribe, sub, x, y`) |
-| `dave_in_the_cave.html` | Self-contained interactive chart |
-| `dave_in_the_cave.png` | Static image of the chart |
+| `david_at_hebron.html` | Self-contained interactive chart |
+| `david_at_hebron.png` | Static image of the chart |
 
 ## Reproduce it
 
@@ -58,11 +58,11 @@ install.packages(c("remotes", "readxl", "dplyr", "ggplot2", "ggiraph",
 remotes::install_github("loukesio/ggvmap")
 remotes::install_github("loukesio/ltc-color-palettes")   # package name: ltc
 
-setwd("path/to/Bible-Data-Stories/dave-in-the-cave")
-source("dave_in_the_cave.R")
+setwd("path/to/Bible-Data-Stories/david-at-hebron")
+source("david_at_hebron.R")
 ```
 
-On its first run the script downloads the Google Fonts it uses (Cinzel Decorative, Cinzel and Cormorant Garamond) into a `fonts/` folder, so it needs an internet connection. It then writes `dave_in_the_cave.html`. To try another layout, change `SEED`. To try another LTC palette, change `LTC_PALETTE`.
+On its first run the script downloads the Google Fonts it uses (Cinzel Decorative, Cinzel and Cormorant Garamond) into a `fonts/` folder, so it needs an internet connection. It then writes `david_at_hebron.html`. To try another layout, change `SEED`. To try another LTC palette, change `LTC_PALETTE`.
 
 ## Credits
 

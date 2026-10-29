@@ -1,5 +1,5 @@
 ## ============================================================================
-## Dave in the Cave -- All Israel came to him
+## David at Hebron -- All Israel came to him
 ## An interactive Voronoi TREEMAP (ggvmap, interactive = TRUE) of the tribal
 ## contingents that came to David at Hebron (1 Chronicles 12:23-37).
 ##   * cell AREA   = headcount
@@ -8,7 +8,7 @@
 ##     shade of that cell's own colour so it stands out
 ##
 ## Files needed in the working directory:
-##   Dave in the Cave.xlsx   (your spreadsheet)
+##   David at Hebron.xlsx   (your spreadsheet)
 ##   tribe_icons.csv         (icon outlines, supplied with this script)
 ##
 ## Icons: game-icons.net -- Lorc, Delapouite, Skoll & Caro Asercion, licensed CC BY 3.0
@@ -41,13 +41,13 @@ suppressMessages({
 
 ## ---- 1. Load the spreadsheet -----------------------------------------------
 ## Folder holding the spreadsheet + icons. Run the script from the
-## dave-in-the-cave/ folder, or point DATA_DIR at it.
+## david-at-hebron/ folder, or point DATA_DIR at it.
 DATA_DIR <- getwd()
 if (!file.exists(file.path(DATA_DIR, "tribe_icons.csv"))) {
   stop("tribe_icons.csv not found in ", DATA_DIR, " -- set DATA_DIR to the folder that holds it.")
 }
 
-raw <- read_excel(file.path(DATA_DIR, "Dave in the Cave.xlsx"))   # kept for reference / your own checks
+raw <- read_excel(file.path(DATA_DIR, "David at Hebron.xlsx"))   # kept for reference / your own checks
 
 ## ---- 2. Reconcile the numbers down to exactly 12 tribes --------------------
 ## (a) Reuben, Gad and the eastern half of Manasseh are given as ONE combined
@@ -412,6 +412,6 @@ function(el) {
    jsonlite::toJSON(c("Designed", "by", "Eli", "Sabblah", "Designed by Eli Sabblah"))))
 
 print(widget)   # explicit print so it shows in the Viewer even when the script is source()d
-htmlwidgets::saveWidget(widget, file.path(DATA_DIR, "dave_in_the_cave.html"), selfcontained = TRUE,
-                        title = "Dave in the Cave")
-cat("Saved dave_in_the_cave.html\n")
+htmlwidgets::saveWidget(widget, file.path(DATA_DIR, "david_at_hebron.html"), selfcontained = TRUE,
+                        title = "David at Hebron")
+cat("Saved david_at_hebron.html\n")
